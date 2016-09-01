@@ -1,0 +1,37 @@
+<dataSource name="hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" rdbms="H2" format-version="2.6">
+    <database id="1" name="TASKMANAGER">
+      <visible>1</visible>
+    </database>
+    <schema id="2" parent="1" name="INFORMATION_SCHEMA" />
+    <schema id="3" parent="1" name="PUBLIC">
+      <visible>1</visible>
+    </schema>
+    <table id="4" parent="3" name="TASK" />
+    <column id="5" parent="4" name="NAME">
+      <data-type>CLOB(max)|2005</data-type>
+    </column>
+    <column id="6" parent="4" name="DURATION">
+      <data-type>INTEGER(10)|4</data-type>
+    </column>
+    <column id="7" parent="4" name="ARCHIVATED">
+      <data-type>BOOLEAN(1)|16</data-type>
+    </column>
+    <column id="8" parent="4" name="COMPLETED">
+      <data-type>BOOLEAN(1)|16</data-type>
+    </column>
+    <column id="9" parent="4" name="POSITION">
+      <data-type>INTEGER(10)|4</data-type>
+    </column>
+    <column id="10" parent="4" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(10)|4</data-type>
+      <sequence-identity>1</sequence-identity>
+      <default-expression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_F0EBB296_1636_4433_8577_5C39910EEF74)</default-expression>
+    </column>
+    <key id="11" parent="4" name="TASK_ID_PK">
+      <columns>ID</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
