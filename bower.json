@@ -1,0 +1,24 @@
+{
+  "name": "taskManager",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Anton Nesudimov"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone-amd": "~1",
+    "jquery": "~2",
+    "lodash": "~1",
+    "curl": "~0.8"
+  }
+}
